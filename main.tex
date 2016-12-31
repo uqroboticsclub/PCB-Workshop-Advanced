@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%can remove if it doesn't look as nice
+\usepackage[margin=1in]{geometry} %default margin is 1.5in
+
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage[labelfont=bf]{caption}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{UQ Robotics}
+\lhead{PCB Design Workshop}
+
+\begin{document}
+\input{titlePage}
+%\input{tableOfContents} %Probably not needed if < 10 pages
+\input{introduction}
+\input{workshop}
+\end{document}
