@@ -1,2 +1,13 @@
 \section{Introduction}
+Printed circuit boards (PCBs) are the backbone for nearly all modern electronics. Simple PCBs are often used to help prototype a project, with more advanced PCBs used for iPhones and Televisions often requiring many more layers (in some cases over 100 layers).
+
+\subsection{PCB Concept Refresher}
+\subsubsection{Layers}
+Most PCBs designed by students at University and in projects are 2 layers, top and bottom. However in some cases as size restrictions exist, more layers are required with some designs moving to 4 and 6 layers. Often if custom RF (Radio Frequency) circuitry is required, 4 layers will be required as layers on a 4 layer board are more accurate and thinner allowing the required 50$\Omega$ traces.
+\subsubsection{Traces}
+Traces are the wires that link between components on a PCB. These traces can be any width you require with standard widths being 0.2-0.3mm however high current power traces can be as thick as 1mm depending on current requirements. These traces should never have right angle bends, as this increases the resistance in the trace.
+\subsubsection{Planes}
+Planes make up large sections of copper over the PCB surface. This surface acts as an extremely low resistance trace allowing for better ground signals and in some cases high current power capacity. In 4 and 6 layer boards it is typical to have both a ground and power plane, however in 2 layer boards (like in this workshop) typically a ground plane is placed on the bottom layer. Traces should be avoided on power and ground planes to stop the breaking up of planes, although in most cases some traces will be required on the bottom layer of a 2 layer board.
+\subsubsection{Footprints}
+Footprints are sections of the PCB that holds components, for example a footprint for a surface mount resistor is shown below, with 2 copper sections and a white line surrounding it. Often markings are added to denote what part number and what value is required in this position.
 \newpage
